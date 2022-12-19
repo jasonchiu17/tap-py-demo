@@ -1,13 +1,8 @@
-import os
-from flask import Flask, render_template, jsonify
+from flask import Blueprint, jsonify
 
-app = Flask(__name__)
+app2 = Blueprint('app2', __name__)
 
-@app.route('/')
-def hello_world():
-    return render_template('index.html')
-
-@app.route('/api')
+@app2.route('/api')
 def api():
     resp = { 
     'data' : { 
@@ -20,6 +15,3 @@ def api():
         }
     }
     return jsonify(resp)
-
-if __name__ == '__main__':
-    app.run()
