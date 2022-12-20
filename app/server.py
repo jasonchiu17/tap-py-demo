@@ -9,7 +9,6 @@ def create_app():
 
 app = create_app()
 
-
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -18,8 +17,5 @@ def index():
 def index2():
     return url_for('index')
 
-def test_runner():
-    return "running"
-
 if __name__ == '__main__':
-    create_app.run()
+    app.run()

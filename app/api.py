@@ -15,3 +15,7 @@ def api():
         }
     }
     return jsonify(resp)
+
+@app2.route('/ping')
+def ping():
+    return jsonify(ping='pong')
