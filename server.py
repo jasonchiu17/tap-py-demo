@@ -1,9 +1,9 @@
 import os
 from flask import Flask, render_template,url_for
-from .api import app2
+from app.api import app2
 
 def create_app():
-    app = Flask(__name__,static_folder="./static",template_folder="./templates")
+    app = Flask(__name__,static_folder="./app/static",template_folder="./app/templates")
     app.register_blueprint(app2)
     return app
 
