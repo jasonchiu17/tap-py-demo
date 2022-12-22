@@ -4,10 +4,10 @@ A basic sample which began life as part of the [Packeto Buildpack](https://githu
 
 ## Running Locally
 ```
-flask --app app.server run --port=5001
+flask --app server run --port=5001
 
 Debug mode: 
-flask --debug --app  app.server run --port=5001
+flask --debug --app server run --port=5001
 ```
 
 ## Viewing

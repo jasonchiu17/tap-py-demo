@@ -15,6 +15,10 @@ def index():
 
 @app.route('/index2')
 def index2():
+    return render_template('index2.html')
+
+@app.route('/index_url_for')
+def index_url_for():
     return url_for('index')
 
 if __name__ == '__main__':
